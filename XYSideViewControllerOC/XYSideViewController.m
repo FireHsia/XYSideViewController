@@ -243,4 +243,9 @@
     }
 }
 
+-(void)dealloc
+{
+    [_currentVC.view removeObserver:self forKeyPath:@"center"];
+}
+
 @end
